@@ -3,53 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Gulrez Gazi | Tech Portfolio</title>
+    <title>Muhammad Gulrez Gazi | Portfolio</title>
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <h2>Gulrez Gazi</h2>
-        <ul>
+        <div class="logo">MG<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Muhammad Gulrez Gazi</span></h1>
-            <p>BCA First Year Student & Tech Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
-
-    <section id="skills" class="skills-section">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">Cybersecurity (Kali Linux)</div>
-            <div class="skill-card">C++ Programming</div>
-            <div class="skill-card">Web Hosting (Netlify/GitHub)</div>
-            <div class="skill-card">Video Editing (CapCut)</div>
+            <h3 class="subtitle">Welcome to my world</h3>
+            <h1>Hi, I'm <span>Muhammad Gulrez Gazi</span></h1>
+            <p class="typing-text">BCA First Year Student & Tech Enthusiast</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="#projects" class="btn">Explore My Work <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
-    <section id="projects" class="projects-section">
-        <h2>Featured Projects</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My <span>Arsenal</span></h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class="fa-brands fa-linux"></i>
+                <h3>Cybersecurity</h3>
+                <p>Kali Linux & Network Security</p>
+            </div>
+            <div class="skill-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>C++</h3>
+                <p>Logic Building & Programming</p>
+            </div>
+            <div class="skill-box">
+                <i class="fa-solid fa-server"></i>
+                <h3>Web Hosting</h3>
+                <p>GitHub Pages & Netlify Deployment</p>
+            </div>
+            <div class="skill-box">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Editing</h3>
+                <p>CapCut & Content Creation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Latest <span>Projects</span></h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>C++ CLI Calculator</h3>
-                <p>A menu-driven calculator using switch-case logic.</p>
+                <div class="project-info">
+                    <h3>C++ CLI Calculator</h3>
+                    <p>A fast, menu-driven calculator built using advanced switch-case control structures.</p>
+                    <a href="#" class="project-btn"><i class="fab fa-github"></i> View Source</a>
+                </div>
             </div>
             <div class="project-card">
-                <h3>Network Security Presentation</h3>
-                <p>Interactive HTML slides explaining port numbers and networking basics.</p>
+                <div class="project-info">
+                    <h3>Network Security Slides</h3>
+                    <p>An interactive HTML-based presentation explaining port numbers and networking fundamentals.</p>
+                    <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Muhammad Gulrez Gazi. Hosted on GitHub Pages.</p>
+        <p>© 2026 Designed & Developed by Muhammad Gulrez Gazi</p>
     </footer>
 </body>
 </html>
