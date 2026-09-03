@@ -11,7 +11,7 @@
 ---
 
 ## 🚀 Live Portfolio
-**[🌍 View My Live Website Here](YAHAN_APNI_LIVE_LINK_PASTE_KARNA)**
+**[🌍 View My Live Website Here](https://gulrezgazi2007-droid.github.io/portfolio-website/)**
 
 ## 👨‍💻 About Me
 - 🎓 I'm currently pursuing my **BCA** at Government Autonomous PG College.
