@@ -3,90 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Gulrez Gazi | Portfolio</title>
-    <!-- Google Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Muhammad Gulrez Gazi | Pro Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            /* Deep Dark Gradient Background */
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Glassmorphism Card */
+        .glass-container {
+            width: 100%;
+            max-width: 1100px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .header h3 {
+            color: #94a3b8;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            /* Glowing Neon Text */
+            background: linear-gradient(to right, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .skill-card {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 30px 20px;
+            border-radius: 16px;
+            transition: all 0.4s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            background: rgba(79, 172, 254, 0.1);
+            border-color: #4facfe;
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+        }
+
+        .skill-card i {
+            font-size: 2.5rem;
+            color: #4facfe;
+            margin-bottom: 15px;
+        }
+
+        .skill-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 4px solid #4facfe;
+        }
+
+        .projects-section h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #ffffff;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-item h4 {
+            color: #00f2fe;
+            font-size: 1.2rem;
+        }
+
+        .project-item p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-top: 5px;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">MG<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h3 class="subtitle">Welcome to my world</h3>
-            <h1>Hi, I'm <span>Muhammad Gulrez Gazi</span></h1>
-            <p class="typing-text">BCA First Year Student & Tech Enthusiast</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <a href="#projects" class="btn">Explore My Work <i class="fas fa-arrow-right"></i></a>
+    <div class="glass-container">
+        <div class="header">
+            <h3>Welcome to the digital realm</h3>
+            <h1>Muhammad Gulrez Gazi</h1>
+            <p>First-Year BCA Student | Tech Enthusiast | Developer</p>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">My <span>Arsenal</span></h2>
-        <div class="skills-container">
-            <div class="skill-box">
+        <div class="skills-grid">
+            <div class="skill-card">
                 <i class="fa-brands fa-linux"></i>
-                <h3>Cybersecurity</h3>
-                <p>Kali Linux & Network Security</p>
+                <h4>Kali Linux</h4>
+                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Cybersecurity Ops</p>
             </div>
-            <div class="skill-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>C++</h3>
-                <p>Logic Building & Programming</p>
+            <div class="skill-card">
+                <i class="fa-solid fa-terminal"></i>
+                <h4>C++</h4>
+                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Logic & Programming</p>
             </div>
-            <div class="skill-box">
-                <i class="fa-solid fa-server"></i>
-                <h3>Web Hosting</h3>
-                <p>GitHub Pages & Netlify Deployment</p>
+            <div class="skill-card">
+                <i class="fa-solid fa-cloud"></i>
+                <h4>Web Deployment</h4>
+                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">GitHub & Netlify</p>
             </div>
-            <div class="skill-box">
-                <i class="fa-solid fa-video"></i>
-                <h3>Video Editing</h3>
-                <p>CapCut & Content Creation</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Latest <span>Projects</span></h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>C++ CLI Calculator</h3>
-                    <p>A fast, menu-driven calculator built using advanced switch-case control structures.</p>
-                    <a href="#" class="project-btn"><i class="fab fa-github"></i> View Source</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Network Security Slides</h3>
-                    <p>An interactive HTML-based presentation explaining port numbers and networking fundamentals.</p>
-                    <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-film"></i>
+                <h4>Video Editing</h4>
+                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">CapCut</p>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Designed & Developed by Muhammad Gulrez Gazi</p>
-    </footer>
+        <div class="projects-section">
+            <h2><i class="fa-solid fa-rocket" style="color: #4facfe; margin-right: 10px;"></i> Featured Work</h2>
+            
+            <div class="project-item">
+                <h4>C++ CLI Calculator</h4>
+                <p>Engineered a fast, menu-driven calculator using advanced switch-case structures.</p>
+            </div>
+            
+            <div class="project-item">
+                <h4>Network Security Architecture</h4>
+                <p>Developed an interactive HTML-based module explaining port configurations and networking fundamentals.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
