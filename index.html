@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Gulrez Gazi | Pro Portfolio</title>
+    <title>Muhammad Gulrez Gazi | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -15,17 +15,15 @@
         }
 
         body {
-            /* Deep Dark Gradient Background */
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #09090b 0%, #171717 100%);
             color: #f8fafc;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
-        /* Glassmorphism Card */
         .glass-container {
             width: 100%;
             max-width: 1100px;
@@ -35,36 +33,61 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
             padding: 50px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+
+        .header {
             text-align: center;
+            margin-bottom: 40px;
         }
 
         .header h3 {
             color: #94a3b8;
             font-weight: 400;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .header h1 {
-            font-size: 4rem;
-            font-weight: 800;
-            /* Glowing Neon Text */
-            background: linear-gradient(to right, #00f2fe, #4facfe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             margin-bottom: 15px;
         }
 
-        .header p {
-            font-size: 1.2rem;
-            color: #cbd5e1;
-            margin-bottom: 40px;
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
         }
 
-        /* Skills Grid */
+        .header p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+
+        .social-links a {
+            color: #4facfe;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #00f2fe;
+            text-shadow: 0 0 10px #00f2fe;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #4facfe;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -73,22 +96,22 @@
         }
 
         .skill-card {
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 30px 20px;
+            padding: 25px 20px;
             border-radius: 16px;
             transition: all 0.4s ease;
+            text-align: center;
         }
 
         .skill-card:hover {
-            transform: translateY(-10px);
-            background: rgba(79, 172, 254, 0.1);
+            transform: translateY(-5px);
             border-color: #4facfe;
-            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+            box-shadow: 0 10px 30px rgba(79, 172, 254, 0.15);
         }
 
         .skill-card i {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #4facfe;
             margin-bottom: 15px;
         }
@@ -96,93 +119,114 @@
         .skill-card h4 {
             font-size: 1.1rem;
             font-weight: 600;
+            margin-bottom: 8px;
         }
 
-        /* Projects Section */
-        .projects-section {
-            text-align: left;
-            background: rgba(0, 0, 0, 0.15);
+        .skill-card p {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .timeline {
+            background: rgba(0, 0, 0, 0.2);
             padding: 30px;
             border-radius: 16px;
-            border-left: 4px solid #4facfe;
+            border-left: 3px solid #4facfe;
         }
 
-        .projects-section h2 {
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-            color: #ffffff;
+        .timeline-item {
+            margin-bottom: 25px;
         }
 
-        .project-item {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .project-item:last-child {
-            border-bottom: none;
+        .timeline-item:last-child {
             margin-bottom: 0;
-            padding-bottom: 0;
         }
 
-        .project-item h4 {
+        .timeline-item h4 {
             color: #00f2fe;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
         }
 
-        .project-item p {
-            color: #94a3b8;
+        .timeline-item .date {
+            color: #4facfe;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .timeline-item p {
+            color: #cbd5e1;
             font-size: 0.95rem;
-            margin-top: 5px;
+            line-height: 1.5;
         }
-
     </style>
 </head>
 <body>
 
     <div class="glass-container">
+        
+        <!-- Header Section -->
         <div class="header">
-            <h3>Welcome to the digital realm</h3>
+            <h3>BCA Student & Cybersecurity Enthusiast</h3>
             <h1>Muhammad Gulrez Gazi</h1>
-            <p>First-Year BCA Student | Tech Enthusiast | Developer</p>
+            <p>First-year BCA student with a dedicated background in cybersecurity, ethical hacking, and OSINT. Passionate about utilizing specialized security tools to identify vulnerabilities and eager to apply technical troubleshooting skills in real-world environments.</p>
+            
+            <div class="social-links">
+                <a href="mailto:gulrezgazi2007@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/mohd-gulrez-gazi" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/gulrezgazi2007-droid" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="Location: Chandametta, MP"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
         </div>
 
+        <!-- Technical Skills Section -->
+        <h2 class="section-title">Technical Arsenal</h2>
         <div class="skills-grid">
             <div class="skill-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h4>Cybersecurity & OSINT</h4>
+                <p>Nmap, Burp Suite, Maltego, Hydra, Gobuster</p>
+            </div>
+            <div class="skill-card">
                 <i class="fa-brands fa-linux"></i>
-                <h4>Kali Linux</h4>
-                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Cybersecurity Ops</p>
+                <h4>Operating Systems</h4>
+                <p>Linux Administration, Navigation & Command-line proficiency</p>
             </div>
             <div class="skill-card">
-                <i class="fa-solid fa-terminal"></i>
-                <h4>C++</h4>
-                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">Logic & Programming</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-cloud"></i>
-                <h4>Web Deployment</h4>
-                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">GitHub & Netlify</p>
+                <i class="fa-solid fa-code"></i>
+                <h4>Programming</h4>
+                <p>Basic scripting and CLI tool deployment</p>
             </div>
             <div class="skill-card">
                 <i class="fa-solid fa-film"></i>
-                <h4>Video Editing</h4>
-                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 8px;">CapCut</p>
+                <h4>Multimedia</h4>
+                <p>CapCut - Video Editing, Transition Mapping, Beat Tracking</p>
             </div>
         </div>
 
-        <div class="projects-section">
-            <h2><i class="fa-solid fa-rocket" style="color: #4facfe; margin-right: 10px;"></i> Featured Work</h2>
-            
-            <div class="project-item">
-                <h4>C++ CLI Calculator</h4>
-                <p>Engineered a fast, menu-driven calculator using advanced switch-case structures.</p>
+        <!-- Experience & Projects Section -->
+        <h2 class="section-title">Experience & Training</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Cybersecurity & Linux Live Sessions</h4>
+                <div class="date">Independent Project | March 2026</div>
+                <p>Organized and hosted personalized 1-on-1 interactive demos over Google Meet. Educated participants on Linux navigation, system administration, and cybersecurity principles. Developed promotional scripts and managed session scheduling.</p>
             </div>
             
-            <div class="project-item">
-                <h4>Network Security Architecture</h4>
-                <p>Developed an interactive HTML-based module explaining port configurations and networking fundamentals.</p>
+            <div class="timeline-item">
+                <h4>Diploma in Cybersecurity</h4>
+                <div class="date">7-8 Months Program</div>
+                <p>Intensive training in practical ethical hacking, network security, and security tool deployment.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <div class="date">PG College, Chhindwara | Aug 2026 - Present</div>
+                <p>Currently in First Year. Active contributor to open-source security communities and continuously expanding penetration testing methodologies.</p>
             </div>
         </div>
+
     </div>
 
 </body>
